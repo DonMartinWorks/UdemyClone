@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Cursos en línea: aprende de todo y a tu propio ritmo | Udemy</title>
 
     <!-- Links -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -19,26 +19,7 @@
 </head>
 
 <body>
-    <h1 class="bg-purple-600 text-white text-center p-2 text-lg">Tailwind CSS</h1>
-
-    <div x-data="{ open: false }">
-        <button @click="open = !open">Expand</button>
-
-        <span x-show="open">
-            Content...
-        </span>
-    </div>
-
-    <div class="text-center">
-        <h1 class="text-primary">Estilo h1: primary</h1>
-        <h2 class="text-primary-light">Estilo h2: primary light</h2>
-        <h3 class="text-udemy">Estilo h3: udemy</h3>
-        <h4 class="text-udemy-light">Estilo h4: udemy light</h4>
-        <h5 class="text-udemy-dark">Estilo h5: udemy dark</h5>
-        <h6 class="text-rose-600">Estilo h6</h6>
-
-        <div class="max-w-8xl">max w 8xl</div>
-    </div>
+    <x-layouts.header />
 </body>
 
 </html>
