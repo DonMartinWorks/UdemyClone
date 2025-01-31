@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply font-text text-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-heading font-semibold;
+}
+
+.container {
+    @apply max-w-8xl mx-auto;
+}
+
+.menu-category-active {
+    @apply after:absolute after:bg-primary after:-bottom-3 after:left-1/3 after:block after:border-b after:border-[#2d2f31] after:rotate-45 after:h-4 after:w-4
+}
+
+.cursos-tooltip {
+    @apply after:absolute after:-left-[9px] after:top-1/3 after:block after:border-b after:border-l after:border-gray-300 after:rotate-45 after:h-4 after:w-4  after:bg-white
+}
+
+.cursosTabs {
+    @apply px-2 py-4 font-semibold text-gray-500 hover:text-primary hover:cursor-pointer
+}
+
+.cursosTabsActive {
+    @apply text-primary
+}
+
+.cursosGratuitosTabs {
+    @apply pb-2 px-1 text-gray-500 hover:text-primary hover:cursor-pointer font-semibold border-b-2 border-transparent;
+}
+.cursosGratuitosTabsActive {
+    @apply border-primary text-primary;
+}
